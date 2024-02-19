@@ -40,7 +40,7 @@ typedef err_code_t (*hd44780_func_set_d4)(uint8_t level);
 typedef err_code_t (*hd44780_func_set_d5)(uint8_t level);
 typedef err_code_t (*hd44780_func_set_d6)(uint8_t level);
 typedef err_code_t (*hd44780_func_set_d7)(uint8_t level);
-typedef err_code_t (*hd44780_func_i2c_send)(uint8_t *buf_send, uint16_t len, uint32_t timeout_ms);
+typedef err_code_t (*hd44780_func_i2c_send)(uint8_t *buf_send, uint16_t len);
 typedef void (*hd44780_func_delay)(uint32_t time_ms);
 
 /**

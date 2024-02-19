@@ -90,7 +90,7 @@ static err_code_t hd44780_write_cmd_serial(hd44780_handle_t handle, uint8_t cmd)
 	buf_send[2] = ((cmd << 4) & 0xF0) | 0x04;
 	buf_send[3] = ((cmd << 4) & 0xF0) | 0x08;
 
-	handle->i2c_send(buf_send, 4, 1000);
+	handle->i2c_send(buf_send, 4);
 
 	return ERR_CODE_SUCCESS;
 }
@@ -154,7 +154,7 @@ static err_code_t hd44780_write_data_serial(hd44780_handle_t handle, uint8_t dat
 	buf_send[2] = ((data << 4) & 0xF0) | 0x0D;
 	buf_send[3] = ((data << 4) & 0xF0) | 0x09;
 
-	handle->i2c_send(buf_send, 4, 1000);
+	handle->i2c_send(buf_send, 4);
 
 	return ERR_CODE_SUCCESS;
 }
