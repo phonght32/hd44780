@@ -8,17 +8,17 @@ typedef void (*hd44780_func_wait)(hd44780_handle_t handle);
 typedef struct hd44780 {
 	hd44780_size_t 				size;				/*!< LCD size */
 	hd44780_comm_mode_t 		comm_mode;			/*!< LCD communicate mode */
-	hd44780_func_set_rs 		set_rs;				/*!< Function set RS */
-	hd44780_func_set_rw 		set_rw;				/*!< Function set RW */
-	hd44780_func_set_en 		set_en;				/*!< Function set EN */
-	hd44780_func_set_d0 		set_d0;				/*!< Function set D0 */
-	hd44780_func_set_d1 		set_d1;				/*!< Function set D1 */
-	hd44780_func_set_d2 		set_d2;				/*!< Function set D2 */
-	hd44780_func_set_d3 		set_d3;				/*!< Function set D3 */
-	hd44780_func_set_d4 		set_d4;				/*!< Function set D4 */
-	hd44780_func_set_d5 		set_d5;				/*!< Function set D5 */
-	hd44780_func_set_d6 		set_d6;				/*!< Function set D6 */
-	hd44780_func_set_d7 		set_d7;				/*!< Function set D7 */
+	hd44780_func_set_gpio 		set_rs;				/*!< Function set RS */
+	hd44780_func_set_gpio 		set_rw;				/*!< Function set RW */
+	hd44780_func_set_gpio 		set_en;				/*!< Function set EN */
+	hd44780_func_set_gpio 		set_d0;				/*!< Function set D0 */
+	hd44780_func_set_gpio 		set_d1;				/*!< Function set D1 */
+	hd44780_func_set_gpio 		set_d2;				/*!< Function set D2 */
+	hd44780_func_set_gpio 		set_d3;				/*!< Function set D3 */
+	hd44780_func_set_gpio 		set_d4;				/*!< Function set D4 */
+	hd44780_func_set_gpio 		set_d5;				/*!< Function set D5 */
+	hd44780_func_set_gpio 		set_d6;				/*!< Function set D6 */
+	hd44780_func_set_gpio 		set_d7;				/*!< Function set D7 */
 	hd44780_func_i2c_send		i2c_send;			/*!< Function send I2C data */
 	hd44780_func_delay 			delay;				/*!< Function delay in ms */
 	hd44780_func_write			write_cmd;			/*!< Function write command */
