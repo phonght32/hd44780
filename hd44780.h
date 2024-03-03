@@ -56,7 +56,7 @@ typedef enum {
 typedef enum {
 	HD44780_COMM_MODE_4BIT = 0,						/*!< 4 bit data mode */
 	HD44780_COMM_MODE_8BIT,							/*!< 8 bit data mode */
-	HD44780_COMM_MODE_SERIAL,						/*!< I2C communication mode */
+	HD44780_COMM_MODE_I2C,							/*!< I2C communication mode */
 	HD44780_COMM_MODE_MAX,
 } hd44780_comm_mode_t;
 
