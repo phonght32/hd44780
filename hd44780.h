@@ -189,14 +189,14 @@ err_code_t hd44780_write_float(hd44780_handle_t handle, float number, uint8_t pr
 /*
  * @brief 	Move LCD's cursor to cordinate (x,y).
  *
- * @param   col Column position.
  * @param 	row Row position.
+ * @param   col Column position.
  *
  * @return
  *      - ERR_CODE_SUCCESS: Success.
  *      - Others:           Fail.
  */
-err_code_t hd44780_gotoxy(hd44780_handle_t handle, uint8_t col, uint8_t row);
+err_code_t hd44780_gotoxy(hd44780_handle_t handle, uint8_t row, uint8_t col);
 
 /*
  * @brief   Shift cursor forward.

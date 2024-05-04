@@ -431,7 +431,7 @@ err_code_t hd44780_write_float(hd44780_handle_t handle, float number, uint8_t pr
 	return ERR_CODE_SUCCESS;
 }
 
-err_code_t hd44780_gotoxy(hd44780_handle_t handle, uint8_t col, uint8_t row)
+err_code_t hd44780_gotoxy(hd44780_handle_t handle, uint8_t row, uint8_t col)
 {
 	/* Check if handle structure is NULL */
 	if (handle == NULL)
