@@ -29,7 +29,8 @@ extern "C" {
 
 #include "err_code.h"
 
-#define HD77480_I2C_ADDR  		0x3F
+#define HD77480_I2C_ADDR_PCF8574  		0x27
+#define HD77480_I2C_ADDR_PCF8574A  		0x3F
 
 typedef err_code_t (*hd44780_func_set_gpio)(uint8_t level);
 typedef err_code_t (*hd44780_func_i2c_send)(uint8_t *buf_send, uint16_t len);
